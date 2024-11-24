@@ -42,7 +42,7 @@
     fill: #27ae60; /* Green for >85% */
 }
 .pie-chart .slice2 {
-    fill: #4f9bec; /* Yellow for 70-85% */
+    fill:black; /* Yellow for 70-85% */
 }
 .pie-chart .slice3 {
     fill: #e74c3c; 

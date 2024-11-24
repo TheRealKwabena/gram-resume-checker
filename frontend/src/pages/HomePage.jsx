@@ -10,7 +10,7 @@ const HomePage = () => {
   const sampleData = {
     message: "Your resume is a great match for this job.",
     suggestions: "Consider adding more skills in Python.",
-    matchpercentage: 75, 
+    matchpercentage: 85, 
     originalText: "Original Resume file."
   };
 
