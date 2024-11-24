@@ -1,16 +1,23 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
-import { HomePage } from './pages/Home'; 
+import HomePage  from './pages/HomePage'; 
+import MainLayout from './layouts/MainLayout';
+import ResultPage from './pages/ResultPage';
+import SuggestionsPage from './pages/suggestion';
 
 function App() {
 
   const router = createBrowserRouter(createRoutesFromElements(
     <>
-      <Route path="home" />
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="/results" element={<ResultPage />} />
+        <Route path="/suggestions" element={<SuggestionsPage />} />
+      </Route>
     </>
   ))
   return (
     <div>
-      <HomePage />
+      <RouterProvider router={router} />
     </div>
   )
 }

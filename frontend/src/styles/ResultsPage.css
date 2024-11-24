@@ -1,0 +1,125 @@
+/* General container styling */
+.results-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Light gray background */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Chart container styling */
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #ffffff; /* White background for the chart box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced subtle shadow */
+    border-radius: 12px; /* Slightly more rounded corners */
+    padding: 40px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 3D effect for the pie chart */
+.chartjs-render-monitor {
+    transform: perspective(1000px) rotateX(15deg) rotateY(15deg); /* Perspective and rotation for 3D effect */
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); /* Adding a shadow for depth */
+    transition: transform 0.2s ease-in-out;
+}
+
+.chartjs-render-monitor:hover {
+    transform: perspective(1000px) rotateX(30deg) rotateY(30deg); /* Increase rotation on hover for interactive effect */
+}
+
+/* Pie chart slices colors */
+.pie-chart .slice1 {
+    fill: #27ae60; /* Green for >85% */
+}
+.pie-chart .slice2 {
+    fill: #f1c40f; /* Yellow for 70-85% */
+}
+.pie-chart .slice3 {
+    fill: #e74c3c; /* Red for <70% */
+}
+
+/* Chart label styling */
+.chart-label {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Suggestion box styling */
+.suggestion-box {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Percentage text styling */
+.percentage-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #27ae60; /* Default green color */
+    margin-bottom: 20px;
+}
+
+/* Adjust percentage color dynamically */
+.percentage-text.green {
+    color: #27ae60; /* Green for >85% */
+}
+
+.percentage-text.yellow {
+    color: #f1c40f; /* Yellow for 70-85% */
+}
+
+.percentage-text.red {
+    color: #e74c3c; /* Red for <70% */
+}
+
+/* Button for navigation or retry */
+.retry-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #3498db; /* Blue for button */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.retry-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .chart-container,
+    .suggestion-box {
+        width: 90%;
+    }
+
+    .percentage-text {
+        font-size: 28px;
+    }
+}
+
+.h2 grade-message{
+    color: black;
+}

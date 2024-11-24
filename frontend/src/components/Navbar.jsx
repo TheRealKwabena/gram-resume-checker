@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import '../styles/Navbar.css';
+import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+function Navbar() {
   return (
-    <div>
-      
-    </div>
-  )
+    <nav className="navbar">
+      <h1>Resume Scanner</h1>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+      </ul>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
