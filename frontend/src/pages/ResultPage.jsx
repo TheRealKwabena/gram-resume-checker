@@ -5,7 +5,6 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
 import "../styles/ResultsPage.css";
 
-// Register required components for Pie chart
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const ResultsPage = () => {
@@ -60,7 +59,6 @@ const ResultsPage = () => {
     },
   };
 
-  // Navigate to Suggestions page and pass both suggestions and originalText
   const handleDetailedSuggestionsClick = () => {
     navigate("/suggestions", { state: { data: { suggestions, originalText } } });
   };

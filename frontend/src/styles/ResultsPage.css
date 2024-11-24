@@ -42,10 +42,10 @@
     fill: #27ae60; /* Green for >85% */
 }
 .pie-chart .slice2 {
-    fill: #f1c40f; /* Yellow for 70-85% */
+    fill: #4f9bec; /* Yellow for 70-85% */
 }
 .pie-chart .slice3 {
-    fill: #e74c3c; /* Red for <70% */
+    fill: #e74c3c; 
 }
 
 /* Chart label styling */
@@ -83,8 +83,8 @@
     color: #27ae60; /* Green for >85% */
 }
 
-.percentage-text.yellow {
-    color: #f1c40f; /* Yellow for 70-85% */
+.percentage-text.orange {
+    color: orange; /* Yellow for 70-85% */
 }
 
 .percentage-text.red {

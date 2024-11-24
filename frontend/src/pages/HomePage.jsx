@@ -10,8 +10,8 @@ const HomePage = () => {
   const sampleData = {
     message: "Your resume is a great match for this job.",
     suggestions: "Consider adding more skills in Python.",
-    matchpercentage: 50, 
-    originalText: "dvucsdbfiuhsibcv sbdjsk"
+    matchpercentage: 75, 
+    originalText: "Original Resume file."
   };
 
   const handleResumeUpload = (e) => {
@@ -22,10 +22,9 @@ const HomePage = () => {
     if (resume) {
       setIsUploading(true);
       setTimeout(() => {
-        // Correctly passing the sample data
         navigate("/results", { state: { data: sampleData } });
         setIsUploading(false);
-      }, 2000); // Simulate a 2-second delay for uploading
+      }, 2000);
     }
   };
 
